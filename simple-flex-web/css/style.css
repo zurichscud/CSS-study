@@ -80,7 +80,6 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 .content-nav .item{
     width: 180px;
@@ -91,8 +90,6 @@ body{
     /*动画*/
     transition: 0.2s linear;
     cursor: pointer;
-
-
 }
 .content-nav .item span{
     text-align: center;
