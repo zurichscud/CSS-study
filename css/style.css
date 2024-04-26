@@ -1,0 +1,103 @@
+/*清除样式*/
+*{
+    font-size:14px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "霞鹜文楷 Light", serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/*设置html大小*/
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url(../images/1338664.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*页眉*/
+.page-header{
+    height: 80px;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 70px;
+    width:70px;
+}
+.page-header a{
+    display: flex;
+    align-items: center;
+}
+.page-header a span{
+    font-size: 30px;
+    color: #fff;
+
+}
+.header-nav{
+    /*background-color: yellow;*/
+    /*没有必要设置justify-content，因为一行已被盛满*/
+    display: flex;
+    align-items: center;
+}
+
+
+.header-nav li a{
+
+    color: white;
+    font-size: 20px;
+    /*border:1px solid white;*/
+    /*border-radius:8px;*/
+    padding: 10px;
+    margin-left:20px ;
+}
+
+/*内容区*/
+
+.page-content{
+    display: flex;
+    /*设置内容区的高度*/
+    height: calc(100vh - 70px);
+}
+.content-nav{
+    width: 1000px;
+    height: 400px;
+    background-color:rgba(255,255,255,0.4) ;
+    margin: auto;
+    /*flex布局*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.content-nav .item{
+    width: 180px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    /*动画*/
+    transition: 0.2s linear;
+    cursor: pointer;
+
+
+}
+.item span{
+    text-align: center;
+    color: white;
+}
+.content-nav .item:hover{
+    box-shadow: 0 0 20px black;
+}
