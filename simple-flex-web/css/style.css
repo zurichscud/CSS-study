@@ -69,7 +69,7 @@ body{
 .page-content{
     display: flex;
     /*设置内容区的高度*/
-    height: calc(100vh - 70px);
+    height: calc(100vh - 80px - 51px);
 }
 .content-nav{
     width: 1000px;
@@ -94,10 +94,35 @@ body{
 
 
 }
-.item span{
+.content-nav .item span{
     text-align: center;
     color: white;
 }
 .content-nav .item:hover{
     box-shadow: 0 0 20px black;
+}
+
+/*footer*/
+footer{
+    height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+}
+/*并集选择器不能省略前缀footer*/
+footer p,
+footer span,
+footer i{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+
+}
+footer span{
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+footer p{
+    margin-left: 500px;
 }
